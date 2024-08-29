@@ -1,0 +1,32 @@
+{
+    "name": "yxs/sso-company",
+    "alias": "",
+    "description": "dcat-admin sso-company",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/heartshuai/sso-company",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yanxingshuai",
+            "email": "yanxingshuai@sina.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yxs\\SsoCompany\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Yxs\\SsoCompany\\SsoCompanyServiceProvider",
+        "laravel": {
+            "providers": [
+                "Yxs\\SsoCompany\\SsoCompanyServiceProvider"
+            ]
+        }
+    }
+}
